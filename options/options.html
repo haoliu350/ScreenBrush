@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Settings</title>
+  <link rel="stylesheet" href="options.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="settings-container">
+    <h2 class="settings-title">Extension Settings</h2>
+
+    <!-- User Guide Section -->
+    <div class="user-guide">
+      <h3 class="guide-title"> <i style="font-size:24px" class="fa">&#xf02d;</i> User Guide</h3>
+      <ul class="feature-list">
+        <li class="feature-item">
+          <span class="feature-icon"><i style="font-size:24px" class="fa">&#xf25a;</i></span>
+          <strong>Annotation:</strong> 
+          <ul class="sub-list">
+            <li>Press and hold right mouse button to start drawing annotations</li>
+            <li>Right click menu will be right double click.</li>
+          </ul>
+        </li>
+        <li class="feature-item">
+          <span class="feature-icon"><i style="font-size:24px" class="fa">&#xf12d;</i></span>
+          <strong>Free Draw:</strong> 
+          <ul class="sub-list">
+            <li>Drawings stay until manually cleared</li>
+            <li>Press <kbd>ESC</kbd> to clear all annotations</li>
+          </ul>
+        </li>
+        <li class="feature-item">
+          <span class="feature-icon"><i style="font-size:24px" class="fa">&#xf0c1;</i></span>
+          <strong>Drag-n-Drop:</strong> Drag any hyperlink to open it in a new background tab
+        </li>
+      </ul>
+    </div>
+    
+    <div class="setting-item">
+      <label class="setting-label">Line Color</label>
+      <input type="color" id="line-color" class="color-picker" value="#03B3FF">
+    </div>
+
+    <div class="setting-item">
+      <label class="setting-label">Line Size</label>
+      <div class="slider-container">
+        <input type="range" id="line-width" class="size-slider" min="1" max="10" value="4">
+        <span id="line-width-value" class="size-value">4</span>
+        <span class="unit">px</span>
+      </div>
+    </div>
+
+    <button id="save-btn" class="save-button">
+      <span class="icon"></span>
+      <i style="font-size:24px" class="fa">&#xf0c7;</i>
+      Save Settings
+    </button>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
